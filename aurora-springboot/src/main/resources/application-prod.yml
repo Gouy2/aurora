@@ -48,8 +48,8 @@ spring:
 
   mail:
     host: smtp.163.com
-    username: guyang029@163.com
-    password: EHetAg4ZmrmBjLDi
+    username: ${MAIL_USERNAME}
+    password: ${MAIL_PASSWORD}
     default-encoding: UTF-8
     protocol: smtp
     port: 465
@@ -88,8 +88,8 @@ upload:
   oss:
     url: http://blog-test-gy1.oss-cn-beijing.aliyuncs.com/
     endpoint: oss-cn-beijing.aliyuncs.com
-    accessKeyId: LTAI5tPBC9GCYznSqqdWsZQD
-    accessKeySecret: 2TV4fAIC9axOIVdavwYTS9MhjcSR5I
+    accessKeyId: ${ALIBABA_ACCESS_KEY_ID}
+    accessKeySecret: ${ALIBABA_ACCESS_KEY_SECRET}
     bucketName: blog-test-gy1
   minio:
     url: http://minio的ip:9000/

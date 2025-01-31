@@ -23,3 +23,5 @@ test
 application-dev.yml
 
 *.env
+
+.cursorignore

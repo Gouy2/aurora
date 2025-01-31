@@ -5,7 +5,7 @@ spring:
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://172.17.0.4:3306/aurora?serverTimezone=Asia/Shanghai&allowMultiQueries=true
+    url: jdbc:mysql://103.185.248.39:3306/aurora?serverTimezone=Asia/Shanghai&allowMultiQueries=true
     username: root
     password: 123456
     hikari:
@@ -19,7 +19,7 @@ spring:
       connection-test-query: SELECT 1
 
   redis:
-    host: 172.17.0.2
+    host: 103.185.248.39
     port: 6379
     password: 123456
     database: 0
@@ -31,7 +31,7 @@ spring:
         max-wait: 10000
 
   rabbitmq:
-    host: 172.17.0.3
+    host: 103.185.248.39
     port: 5672
     username: guest
     password: guest
@@ -44,7 +44,7 @@ spring:
 
   elasticsearch:
     rest:
-      uris: 172.17.0.5:9200
+      uris: 103.185.248.39:9200
 
   mail:
     host: smtp.163.com
